@@ -61,8 +61,20 @@ class MyApp extends StatelessWidget {
                        validator:(value){
                         return value!.isEmpty ? 'Please Enter Password':null;
                        } ),
-                        
-                        
+                       SizedBox(
+                        height: 30,
+                       ),
+                       MaterialButton(
+                 shape: RoundedRectangleBorder(
+                  borderRadius:BorderRadius.circular(22.0) ),
+                        minWidth: 300,
+                       height: 50,
+                        onPressed: (){},
+                       child:  Text("Sigin",style: TextStyle(fontWeight: FontWeight.bold,
+                       fontSize: 20),
+                       ),
+                        color: Colors.tealAccent,
+                        textColor: Colors.blueGrey, )                                             
                       ],
                   
                     ),
